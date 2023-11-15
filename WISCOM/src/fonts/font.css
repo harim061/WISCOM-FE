@@ -4,3 +4,15 @@
   font-weight: 400;
   src: url('./ZenTokyoZoo.woff') format('woff');
 }
+@font-face {
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 100;
+  src: url('./Pretendard-Light.woff') format('woff');
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-style: bold;
+  font-weight: 400;
+  src: url('./Pretendard-SemiBold.woff') format('woff');
+}

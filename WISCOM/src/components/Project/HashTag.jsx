@@ -3,11 +3,11 @@ import * as H from './HashTagStyle';
 
 const HashTag = (props) => {
   //const [isClicked, setIsClicked] = useState(false);
-  const { onTagClick, tagName, isSelected } = props;
+  const { onTagClick, tagId, tagName, isSelected } = props;
 
   const handleTagClick = () => {
     //setIsClicked(!isClicked);
-    onTagClick(tagName); // Notify the parent component about the tag click and its content
+    onTagClick(tagId); // Notify the parent component about the tag click and its content
   };
 
   // 선택 여부에 따라 스타일 변수명 변경

@@ -116,7 +116,7 @@ export const ClickInfo = styled.div`
   color: ${(props) => props.theme.colors.white};
   text-align: center;
   font-family: Pretendard;
-  font-weight: 200;
+  font-weight: 100;
   padding-bottom: 3rem;
 
   @media screen and (min-width: 920px) {

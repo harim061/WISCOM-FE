@@ -1,16 +1,17 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
- "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000"
- preserveAspectRatio="xMidYMid meet">
-
-<g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-fill="#000000" stroke="none">
-<path d="M1988 4457 c-71 -27 -124 -67 -220 -165 -128 -130 -153 -180 -153
--307 1 -160 -29 -123 664 -817 l606 -608 -607 -607 c-694 -695 -663 -656 -663
--818 0 -130 29 -186 168 -322 135 -133 184 -158 312 -158 164 0 86 -67 1012
-858 944 942 878 864 878 1047 0 183 60 111 -867 1041 -906 910 -849 860 -1007
-866 -55 2 -99 -2 -123 -10z"/>
+<svg width="131" height="131" viewBox="0 0 131 131" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_705_3)">
+<path d="M50.3711 106.191L91.214 65.3485L50.3711 24.5056" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
+<defs>
+<filter id="filter0_d_705_3" x="-4.00183" y="0" width="138.698" height="138.697" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_705_3"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_705_3" result="shape"/>
+</filter>
+</defs>
 </svg>

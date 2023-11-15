@@ -1,69 +1,43 @@
 import styled from 'styled-components';
 
-export const BannerWrap = styled.div`
+export const ImageSliderContainer = styled.div`
   display: flex;
   align-items: center;
-  text-align: center;
-  max-width: 1440px;
-  height: 600px;
-  margin-bottom: 20%;
+  justify-content: space-between;
+
+  --arrow-size: 90px; /* 화살표 크기 변수 설정 */
+  position: relative; /* 부모 클래스에 relative 포지션을 추가 */
+  margin-bottom: 200px;
+
+  @media (min-width: 1441px) {
+    margin: 0 auto; /* 정렬 필수!!!!! */
+    margin-bottom: 100px;
+  }
+
+  @media (max-width: 425px) {
+    margin-bottom: 100px;
+  }
+`;
+
+export const SliderBannerWrap = styled.div`
+  width: 1100px;
+  height: auto;
+  position: relative;
+  aspect-ratio: 11 / 7; /* 가로 세로 비율을 11:7로 고정 */
+
   border-radius: 30px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  --arrow-size: 70px; /* 화살표 크기 변수 설정 */
+  box-shadow: 0 0.01px 0.01px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: flex;
+  align-items: center;
 
-  @media (max-width: 1442px) {
-    width: 100%;
-    height: 710px;
-  }
+  margin-left: 10%;
+  margin-right: 10%;
 
-  @media (max-width: 1350px) {
-    width: 100%;
-    height: 650px;
-  }
+  justify-content: center;
 
-  @media (max-width: 1250px) {
-    width: 100%;
-    height: 600px;
-  }
-
-  @media (max-width: 1165px) {
-    width: 100%;
-    height: 500px;
-  }
-  @media (max-width: 1000px) {
-    width: 100%;
-    height: 460px;
-    --arrow-size: 60px; /* 미디어 쿼리에서 화살표 크기 조절 */
-  }
-
-  @media (max-width: 900px) {
-    width: 100%;
-    height: 420px;
-    --arrow-size: 50px; /* 미디어 쿼리에서 화살표 크기 조절 */
-  }
-
-  @media (max-width: 850px) {
-    width: 100%;
-    height: 380px;
-    --arrow-size: 40px; /* 미디어 쿼리에서 화살표 크기 조절 */
-  }
-
-  @media (max-width: 690px) {
-    width: 100%;
-    height: 280px;
-    --arrow-size: 30px; /* 미디어 쿼리에서 화살표 크기 조절 */
-  }
-
-  @media (max-width: 525px) {
-    width: 100%;
-    height: 200px;
-    --arrow-size: 20px; /* 미디어 쿼리에서 화살표 크기 조절 */
-  }
-
-  @media (max-width: 393px) {
-    max-width: 330px;
-    height: 150px;
-    --arrow-size: 15px; /* 미디어 쿼리에서 화살표 크기 조절 */
+  @media (min-width: 1440px) {
+    width: 1400px;
   }
 `;
 
@@ -71,23 +45,18 @@ export const SlideBanner = styled.div`
   position: relative;
   width: 100%;
   height: 100%;
-  &:hover .preArrow,
-  &:hover .nextArrow {
-    cursor: pointer;
-    opacity: 1;
-    transition: 0.7s;
-  }
 `;
 
 export const BannerImage = styled.img`
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  border-radius: 30px;
   position: absolute;
   left: 0;
   opacity: 0;
   transition: opacity 0.8s ease-in-out;
+
+  border-radius: 30px;
+  border: 3px solid rgba(0, 0, 0, 0.1);
 
   &.active {
     opacity: 1;
@@ -96,25 +65,38 @@ export const BannerImage = styled.img`
 
 export const Arrow = styled.div`
   position: absolute;
-  top: 50%; /* 세로 가운데 정렬 */
   width: var(--arrow-size);
   height: calc(var(--arrow-size) * 1.43);
-  background-color: rgba(255, 255, 255, 0.5);
   display: flex;
-  border-radius: 5px;
-  opacity: 0; /* 처음에는 화살표를 보이지 않게 설정 */
+  transition: opacity 0.8s ease-in-out;
 
-  &:hover {
-    opacity: 1; /* 마우스 호버 시에만 화살표를 보이도록 설정 */
+  @media (max-width: 1000px) {
+    width: 60px; /* 화면이 850px보다 작을 때 화살표 크기를 60px로 조절 */
+    height: calc(60px * 1.43);
+  }
+
+  @media (max-width: 768px) {
+    width: 50px; /* 화면이 850px보다 작을 때 화살표 크기를 60px로 조절 */
+    height: calc(50px * 1.43);
+  }
+
+  @media (max-width: 550px) {
+    width: 40px; /* 화면이 850px보다 작을 때 화살표 크기를 60px로 조절 */
+    height: calc(40px * 1.43);
+  }
+
+  @media (max-width: 426px) {
+    width: 30px; /* 화면이 850px보다 작을 때 화살표 크기를 60px로 조절 */
+    height: calc(30px * 1.43);
   }
 `;
 
 export const PreArrow = styled(Arrow)`
   left: 0;
-  transform: translateY(-50%); /* 세로 가운데 정렬을 위해 추가 */
+  transform: rotate(180deg); /* 세로 가운데 정렬을 위해 추가 */
+  z-index: 300;
 `;
 
 export const NextArrow = styled(Arrow)`
   right: 0;
-  transform: translateY(-50%); /* 세로 가운데 정렬을 위해 추가 */
 `;

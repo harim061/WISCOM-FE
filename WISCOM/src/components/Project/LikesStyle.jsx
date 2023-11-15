@@ -4,8 +4,8 @@ export const LikesWrapper = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center; /* 가로 가운데 정렬 */
-  margin-top: 280px;
-  margin-bottom: 140px;
+  margin-top: 10vw;
+  margin-bottom: 10vw;
 
   @media screen and (min-width: 0px) and (max-width: 320px) {
     display: none;
