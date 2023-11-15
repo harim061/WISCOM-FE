@@ -1,7 +1,7 @@
 ![image](https://github.com/2023WISCOM/WISCOM-FE/assets/90364684/09048577-ebff-4d54-8ac5-c8ec0c340eb5)
 
 2023 덕성여자대학교 컴퓨터공학전공 졸업전시 WISCOM 프론트엔드 Repo입니다 <br> 
-  
+## 보러가기 : https://www.wiscom2023.com/  
 
 # 😀 WISCOM 개발팀 팀원 소개
 
